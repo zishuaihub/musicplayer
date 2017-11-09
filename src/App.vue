@@ -12,7 +12,6 @@ export default {
 
 <style lang="stylus">
   @import "common/css/variable.styl"
-  @import "common/css/index.styl"
 #app {
   color: $color-theme
 }
