@@ -20,7 +20,7 @@
   @import "../../common/css/variable.styl"
   @import "../../common/css/mixin.styl"
 
-  .m-header
+  #app-header
     position: relative
     height: 44px
     text-align: center

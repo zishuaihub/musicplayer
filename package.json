@@ -13,6 +13,8 @@
     "test": "npm run unit && npm run e2e"
   },
   "dependencies": {
+    "axios": "^0.17.0",
+    "jsonp": "^0.2.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "vue": "^2.5.2",
