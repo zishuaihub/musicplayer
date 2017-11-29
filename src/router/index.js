@@ -1,13 +1,12 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-
-Vue.use(Router)
-import recommend from '@/components/recommend/recommend'
-import rank from '@/components/rank/rank'
-import tab from '@/components/tab/tab'
-import singer from '@/components/singer/singer'
-import search from '@/components/search/search'
-
+import Vue from 'vue';
+import Router from 'vue-router';
+Vue.use(Router);
+import recommend from '@/components/recommend/recommend';
+import rank from '@/components/rank/rank';
+import tab from '@/components/tab/tab';
+import singer from '@/components/singer/singer';
+import search from '@/components/search/search';
+import singerDetail from '@/components/singer-detail/singer-detail';
 
 export default new Router({
   routes: [
@@ -28,7 +27,13 @@ export default new Router({
     {
       path: '/singer',
       name: 'singer',
-      component: singer
+      component: singer,
+      children:[
+        {
+          path:':id',
+          component:singerDetail
+        }
+      ]
     },
     {
       path: '/search',

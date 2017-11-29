@@ -18,7 +18,6 @@
     tab
   },
     created(){
-      getRecommend()
     }
 }
 </script>
